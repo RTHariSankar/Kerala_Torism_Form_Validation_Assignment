@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-image: url("../images/indexBG.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;    
+}
+#keralaLogo{
+    margin: 10px;
+    height: 80px;
+    display: inline-block;
+}
+#keralaLogo:hover{
+    opacity: 0.7;
+}
+.navbar{
+    float: right;
+}
+.nav-item{
+    font-size: 21px;
+    font-weight: 400;
+    
+}
+.nav-item .nav-link:hover{
+    color:whitesmoke;
+    font-weight: 500;
+    transition-delay: 65ms;
+}
+
+.A{
+    text-align: center;
+    padding-top: 75px;
+    font-style: italic;
+}
+.A h1{font-size: 50px;}
+.A p{font-size: 25px;}
+
+.hoverlinks a{
+    text-decoration: none;
+}
+.hoverlinks a:hover{
+    font-weight: 500;
+}
+.icon-hover i:hover{
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+}

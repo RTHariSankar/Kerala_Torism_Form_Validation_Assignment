@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding: 0;
+}
+main{
+    
+   background-image: url("../images/loginBG.jpg");
+   background-size: cover;
+   background-position: fixed;
+   background-repeat: no-repeat;
+   height: 100vh;
+}
+#keralaLogo{
+    margin: 10px;
+    height: 80px;
+    display: inline-block;
+}
+#keralaLogo:hover{
+    opacity: 0.7;
+}
+.navbar{
+    float: right;
+}
+.nav-item{
+    font-size: 21px;
+    font-weight: 400;
+    
+}
+.nav-item .nav-link:hover{
+    color:whitesmoke;
+    font-weight: 500;
+    transition-delay: 65ms;
+}
+.wrapper
+{
+    box-shadow: -16px -27px 141px 21px rgba(0,0,0,0.45),
+                25px 0px 20px -20px rgba(0,0,0,0.45),
+                0px 25px 20px -20px rgba(0,0,0,0.45),
+                -25px 0px 20px -20px rgba(0,0,0,0.45);
+}
+.wrapper a{
+    text-decoration: none;
+    color:orangered;
+}
+.wrapper a:hover{
+    color: white;
+    transition-delay: 0.1ms;
+    transition-duration: 0.2ms;
+}
+.btn-1{
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+.btn-1:hover{
+    background-color: white;
+    border: 1px solid;
+    color: black;
+    transition-delay: 0.2s;
+    transition-duration: 0.4s;
+}
+.hoverlinks a{
+    text-decoration: none;
+}
+.hoverlinks a:hover{
+    font-weight: 500;
+}
+.icon-hover i:hover{
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+}
+.input-group span i{
+    color: seagreen;
+}
+.input-group span{
+    position: absolute;
+    bottom: 10px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
+#submit-error{
+    color: red;
+}

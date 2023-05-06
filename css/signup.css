@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-image: url("../images/signupBG.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;    
+}
+#keralaLogo{
+    margin: 10px;
+    height: 80px;
+    display: inline-block;
+}
+#keralaLogo:hover{
+    opacity: 0.7;
+}
+.navbar{
+    float: right;
+}
+.nav-item{
+    font-size: 21px;
+    font-weight: 400;
+    
+}
+.nav-item .nav-link:hover{
+    color:whitesmoke;
+    font-weight: 500;
+    transition-delay: 65ms;
+}
+
+.wrapper{
+    box-shadow: -16px -27px 141px 21px rgba(0,0,0,0.45),
+                25px 0px 20px -20px rgba(0,0,0,0.45),
+                0px 25px 20px -20px rgba(0,0,0,0.45),
+                -25px 0px 20px -20px rgba(0,0,0,0.45);
+}
+.wrapper a{
+    text-decoration: none;
+    color:azure;
+}
+.wrapper a:hover{
+    color:tomato;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+}
+.p{
+    font-weight: 500;
+    color: black;
+}
+.hoverlinks a{
+    text-decoration: none;
+}
+.hoverlinks a:hover{
+    font-weight: 500;
+}
+.icon-hover i:hover{
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+}
+.input-group span{
+    position: absolute;
+    bottom: 10px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
+#submit-error{
+    color: red;
+}
+.input-group span i{
+    color: seagreen;
+}
