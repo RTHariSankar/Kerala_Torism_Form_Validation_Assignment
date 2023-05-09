@@ -80,23 +80,29 @@ function validateEmail(){
         return false;
     }
 
-    if ((/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/).test(em)) {
+    if (!em.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
 
+        
+         email.innerHTML = "invalid email";
+         return false;
+        
+        
+    }
+    else{
         var tld = em.split('.').pop();
-        var validTLDs = ["com", "org", "net", "edu", "gov"]; // Add more TLDs as needed
+        var validTLDs = ["com", "org", "net", "edu", "gov","in"]; // Add more TLDs as needed
         
         if (validTLDs.includes(tld)) {
             email.innerHTML = '<i class="fas fa-check-circle"></i>';
             return true;
-        
-    }
-
-    email.innerHTML = "invalid email";
-    return false;
+        }
+        else{
+            email.innerHTML = "Invalid email TLD";
+            return false;
+        }
+}   
     
-    }
 }
-
 // PASSWORD
 
 function validatePassword() {
@@ -202,6 +208,27 @@ function validateConfirmPassword(){
 
 
 }
+
+// TOGGLE PASSWORD
+
+function togglePassword(){
+
+    var pword = document.getElementById("password");
+    var cpword = document.getElementById("confirmPassword");
+
+    if (pword.type === 'password') {
+
+        pword.type = 'text';
+        cpword.type = 'text';
+        
+    } else {
+        
+        pword.type = 'password';
+        cpword.type = 'password';
+    }
+
+}
+
 
 // VALIDATE FORM
 

@@ -47,12 +47,17 @@
             
                 <form action="#">
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Email" id="email" onkeyup="validateEmail()">
+                        <input type="email" class="form-control rounded" placeholder="Email" id="email" onkeyup="validateEmail()">
                         <span id="email-error"></span>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password" id="password" onkeyup="validatePassword()">
+                        <input type="password" class="form-control rounded" placeholder="Password" id="password" onkeyup="validatePassword()">
                         <span id="password-error"></span>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="togglePassword()">
+                      <label class="form-check-label" for="flexCheckDefault">Show Password
+                      </label>
                     </div>
                     <div class="d-grid">
                         <button type="button" class="btn-1" onclick="return validateForm()">Login</button>
